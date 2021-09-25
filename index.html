@@ -216,19 +216,19 @@
 
 
   
-    <article id="post-test01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-win10下搭建hexo博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/09/23/test01/">test01</a>
+      <a class="article-title" href="/2021/09/23/win10%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">win10下搭建hexo博客</a>
     </h1>
   
 
         
-        <a href="/2021/09/23/test01/" class="archive-article-date">
+        <a href="/2021/09/23/win10%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
   	<time datetime="2021-09-23T15:06:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-23</time>
 </a>
         
@@ -236,8 +236,88 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一张"><a href="#第一张" class="headerlink" title="第一张"></a>第一张</h2><p>这是第一张内容内容</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>这是第二章内容内容</p>
+        <blockquote>
+<p>下载准备环境</p>
+</blockquote>
+<h2 id="1-下载nodejs-LTS稳定版"><a href="#1-下载nodejs-LTS稳定版" class="headerlink" title="1. 下载nodejs_LTS稳定版"></a>1. 下载nodejs_LTS稳定版</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/">点击下载nodejs</a>  </p>
+<h2 id="2-安装nodejs"><a href="#2-安装nodejs" class="headerlink" title="2. 安装nodejs"></a>2. 安装nodejs</h2><p>一直加一步就好了</p>
+<h2 id="3-查看node-npm版本"><a href="#3-查看node-npm版本" class="headerlink" title="3. 查看node/npm版本"></a>3. 查看node/npm版本</h2><pre><code>node -v
+npm    -v
+</code></pre>
+<h2 id="4-安装cnpm（用淘宝镜像）"><a href="#4-安装cnpm（用淘宝镜像）" class="headerlink" title="4. 安装cnpm（用淘宝镜像）"></a>4. 安装cnpm（用淘宝镜像）</h2><pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
+</code></pre>
+<h2 id="5-查看cnpm版本"><a href="#5-查看cnpm版本" class="headerlink" title="5. 查看cnpm版本"></a>5. 查看cnpm版本</h2><pre><code>cnpm.com -v     
+</code></pre>
+<h2 id="6-全局安装hexo-cli"><a href="#6-全局安装hexo-cli" class="headerlink" title="6. 全局安装hexo-cli"></a>6. 全局安装hexo-cli</h2><pre><code>cnpm.cmd install -g hexo-cli    
+</code></pre>
+<h2 id="7-查看hexo版本"><a href="#7-查看hexo版本" class="headerlink" title="7. 查看hexo版本"></a>7. 查看hexo版本</h2><pre><code>hexo.cmd -v    
+</code></pre>
+<h2 id="8-安装‘git’"><a href="#8-安装‘git’" class="headerlink" title="8. 安装‘git’"></a>8. 安装‘git’</h2><p><a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/git-for-windows/v2.33.0.windows.2/Git-2.33.0.2-64-bit.exe">点击下载git</a></p>
+<p>下载完成后一直下一步就行，记一下地址，地址可以自定义</p>
+<blockquote>
+<p>安装</p>
+</blockquote>
+<h2 id="9-重新打开命令行窗口查看git版本"><a href="#9-重新打开命令行窗口查看git版本" class="headerlink" title="9. 重新打开命令行窗口查看git版本"></a>9. 重新打开命令行窗口查看git版本</h2><pre><code>git -v
+</code></pre>
+<h2 id="10-在D盘根目录下创建‘blog’新文件夹"><a href="#10-在D盘根目录下创建‘blog’新文件夹" class="headerlink" title="10. 在D盘根目录下创建‘blog’新文件夹"></a>10. 在D盘根目录下创建‘blog’新文件夹</h2><pre><code>d:
+mkdir blog
+</code></pre>
+<h2 id="11-进入blog目录，初始化"><a href="#11-进入blog目录，初始化" class="headerlink" title="11. 进入blog目录，初始化"></a>11. 进入blog目录，初始化</h2><pre><code>cd blog
+git init
+hexo init
+</code></pre>
+<blockquote>
+<p>预览</p>
+</blockquote>
+<h2 id="12-启动预览"><a href="#12-启动预览" class="headerlink" title="12. 启动预览"></a>12. 启动预览</h2><pre><code>hexo.cmd s
+</code></pre>
+<h2 id="13-浏览器预览"><a href="#13-浏览器预览" class="headerlink" title="13. 浏览器预览"></a>13. 浏览器预览</h2><pre><code>localhost:4000
+</code></pre>
+<h2 id="14-新建博客"><a href="#14-新建博客" class="headerlink" title="14. 新建博客"></a>14. 新建博客</h2><pre><code>hexo.cmd n &#39;我的第一个博客&#39;
+</code></pre>
+<p>存放路径：.\source_posts\    存放路径</p>
+<h2 id="15-用编辑器编辑文本（markdown语法，很简单，我们一起学）"><a href="#15-用编辑器编辑文本（markdown语法，很简单，我们一起学）" class="headerlink" title="15. 用编辑器编辑文本（markdown语法，很简单，我们一起学）"></a>15. 用编辑器编辑文本（markdown语法，很简单，我们一起学）</h2><pre><code>## 第一章
+内容
+## 第二章
+内容
+</code></pre>
+<h2 id="16-启动预览"><a href="#16-启动预览" class="headerlink" title="16. 启动预览"></a>16. 启动预览</h2><pre><code>hexo.cmd s
+</code></pre>
+<blockquote>
+<p>部署到github上</p>
+</blockquote>
+<h2 id="1-打开github"><a href="#1-打开github" class="headerlink" title="1. 打开github"></a>1. 打开github</h2><p><a target="_blank" rel="noopener" href="https://github.com/">点击打开github</a>  </p>
+<ul>
+<li>登录账号</li>
+<li>注册账号  <ol>
+<li>填写邮箱</li>
+<li>填写密码</li>
+<li>填写用户名（不可改）</li>
+<li>邮箱需要接收一个验证码<h2 id="2-新建仓库"><a href="#2-新建仓库" class="headerlink" title="2. 新建仓库"></a>2. 新建仓库</h2><img src=".%5Cpng%5C%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%931.png" alt="图一"></li>
+</ol>
+</li>
+</ul>
+<h2 id="3-回到命令行安装一个git部署插件"><a href="#3-回到命令行安装一个git部署插件" class="headerlink" title="3. 回到命令行安装一个git部署插件"></a>3. 回到命令行安装一个git部署插件</h2><pre><code>cnpm.cmd install --save hexo-deployer-git
+</code></pre>
+<h2 id="4-设置配置文件（blog目录下）：-config-yml"><a href="#4-设置配置文件（blog目录下）：-config-yml" class="headerlink" title="4. 设置配置文件（blog目录下）：_config.yml"></a>4. 设置配置文件（blog目录下）：_config.yml</h2><pre><code>deploy:
+    type: &#39;git&#39;
+    repo: https://github.com/wxinhuo/wxinhuo.github.io.git
+    branch: master
+</code></pre>
+<h2 id="5-去github网页拿个令牌"><a href="#5-去github网页拿个令牌" class="headerlink" title="5. 去github网页拿个令牌"></a>5. 去github网页拿个令牌</h2><pre><code>点击右上角头像--setting--左边选项栏‘developer settings’ --Personnal access tokens
+</code></pre>
+<p><img src=".%5Cpng%5Cgitaddtoken.png" alt="图二"><br><img src=".%5Cpng%5C%E4%B8%AD%E6%96%87%E7%89%88%E8%8E%B7%E5%8F%96token%E9%A1%B5%E9%9D%A2.png" alt="图二"></p>
+<h2 id="6-把拿到的token令牌复制到备忘录备用"><a href="#6-把拿到的token令牌复制到备忘录备用" class="headerlink" title="6. 把拿到的token令牌复制到备忘录备用"></a>6. 把拿到的token令牌复制到备忘录备用</h2><h2 id="7-回到命令行blog目录下，配置git设置"><a href="#7-回到命令行blog目录下，配置git设置" class="headerlink" title="7. 回到命令行blog目录下，配置git设置"></a>7. 回到命令行blog目录下，配置git设置</h2><pre><code>git config --global user.email xxx        （xxx==邮箱名）
+git config --global user.name xxx        （xxx==用户名）
+</code></pre>
+<h2 id="8-上推文件"><a href="#8-上推文件" class="headerlink" title="8. 上推文件"></a>8. 上推文件</h2><pre><code>hexo.cmd clean            (清理)
+hexo.cmd g                (生成)
+hexo.cmd d                (上推)
+</code></pre>
+<h2 id="9-第一次会弹出输入令牌：输入‘第6步’保存的token令牌，确定"><a href="#9-第一次会弹出输入令牌：输入‘第6步’保存的token令牌，确定" class="headerlink" title="9. 第一次会弹出输入令牌：输入‘第6步’保存的token令牌，确定"></a>9. 第一次会弹出输入令牌：输入‘第6步’保存的token令牌，确定</h2><h2 id="10-如果出错了就再推一次（偶尔会失败，暂时不知道原因）"><a href="#10-如果出错了就再推一次（偶尔会失败，暂时不知道原因）" class="headerlink" title="10. 如果出错了就再推一次（偶尔会失败，暂时不知道原因）"></a>10. 如果出错了就再推一次（偶尔会失败，暂时不知道原因）</h2><h2 id="11-提示‘Deploy-done’，表示成功"><a href="#11-提示‘Deploy-done’，表示成功" class="headerlink" title="11. 提示‘Deploy done’，表示成功"></a>11. 提示‘Deploy done’，表示成功</h2><h2 id="12-访问自己的博客吧"><a href="#12-访问自己的博客吧" class="headerlink" title="12. 访问自己的博客吧"></a>12. 访问自己的博客吧</h2><p><a href="wxinhuo.github.io">wxinhuo.github.io</a></p>
+<h2 id="13-完成-来一起玩耍吧"><a href="#13-完成-来一起玩耍吧" class="headerlink" title="13. 完成  来一起玩耍吧~"></a>13. 完成  来一起玩耍吧~</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/medialist/play/ml1169488203/BV1Yb411a7ty?spm_id_from=333.999.0.0">参考视频链接</a><br>视频里的大神是在mac系统上装的，推荐看一下</p>
+</blockquote>
 
       
 
@@ -250,7 +330,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/09/23/test01/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/09/23/win10%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
         </p>
       
 
